@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+
 export default function HomePage() {
   return (
     <>      
@@ -61,9 +62,9 @@ function Home() {
             <br /> livre de xarope
           </h1>
 
-          <button className="mt-10 bg-customYellow text-black items-center text-center ml-40 rounded-lg py-3 px-16">
+          <a href="https://pedido.anota.ai/loja/quentinha-frut-mix?f=ms" ><button className="mt-10 bg-customYellow text-black items-center text-center ml-40 rounded-lg py-3 px-16">
             Peça Agora
-          </button>
+          </button></a>
         </div>
 
         <div className="s:w-50px relative z-10 mt-10 md:mt-0 xl:mr-40 xxl:mr-60">
@@ -76,13 +77,23 @@ function Home() {
 
 function SectionTwo() {
   return (
-    <div 
+    <div
       className="relative bg-gradient-to-br from-purple-500 to-purple-700 text-white py-20"
-      style={{ backgroundImage: "url('/img/ip/parte_02.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}
+      style={{
+        backgroundImage: "url('/img/ip/parte_02.png')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
     >
       <h1 className="text-4xl font-bold text-center mb-12">Nossas Opções</h1>
       <div className="flex flex-wrap justify-center space-x-6">
-        <div className="w-60 bg-customPurple rounded-lg shadow-lg overflow-hidden text-center">
+        {/* Card Açaí com Morango */}
+        <div className="w-60 bg-customPurple rounded-lg shadow-lg overflow-hidden text-center relative">
+          <div
+            className="bg-red-400 text-black py-2 text-lg font-semibold"
+          >
+            Morango
+          </div>
           <img
             src="/img/ip/acaimorango.png"
             alt="Açaí com morango"
@@ -90,7 +101,13 @@ function SectionTwo() {
           />
         </div>
 
-        <div className="w-60 bg-customPurple rounded-lg shadow-lg overflow-hidden text-center">
+        {/* Card Açaí de Banana */}
+        <div className="w-60 bg-customPurple rounded-lg shadow-lg overflow-hidden text-center relative">
+          <div
+            className="bg-yellow-300 text-black py-2 text-lg font-semibold"
+          >
+            Banana
+          </div>
           <img
             src="/img/ip/acaibanana.png"
             alt="Açaí de banana"
@@ -98,7 +115,13 @@ function SectionTwo() {
           />
         </div>
 
-        <div className="w-60 bg-customPurple rounded-lg shadow-lg overflow-hidden text-center">
+        {/* Card Açaí Natural */}
+        <div className="w-60 bg-customPurple rounded-lg shadow-lg overflow-hidden text-center relative">
+          <div
+            className="bg-green-400 text-black py-2 text-lg font-semibold"
+          >
+            Natural
+          </div>
           <img
             src="/img/ip/acainatural.png"
             alt="Açaí Natural"
@@ -112,28 +135,28 @@ function SectionTwo() {
 
 function SectionThree() {
   return (
-    <div className="relative bg-gradient-to-br from-purple-500 to-purple-700 text-white min-h-[75vh] pt-48 pb-20">
+    <div className="relative bg-gradient-to-br from-purple-500 to-purple-700 text-white min-h-[50vh] pt-20 pb-10">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: "url('/img/ip/parte_03.jpeg')",
         }}
       />
-      <div className="flex flex-col items-center px-10 md:flex-row md:justify-between relative z-10 ml-20 mt-20 mb-20">
+
+      <div className="flex flex-col items-center md:flex-row md:justify-between md:space-x-4 relative z-10 ml-20 mt-10 mb-10">
         <h1 className="text-4xl font-bold md:text-4xl text-white text-center mb-6 absolute top-0 left-1/2 transform -translate-x-1/2">
           Um pouco da nossa história
         </h1>
-        <div className="relative z-10 mt-10 md:mt-0 xl:mr-40 xxl:mr-60 w-full max-w-xs md:max-w-md ml-10">
+        <div className="relative z-10 mt-10 md:mt-16 xl:mr-20 w-full max-w-xs md:max-w-md ml-10">
           <img
             src="/img/ip/loja.jpeg"
             alt="Copo de Açaí"
             className="w-full h-auto object-contain"
           />
         </div>
-        <div className="text-center md:text-left mt-20 relative z-10 bg-opacity-70 p-8 rounded-xl">
-          <p className="text-lg text-white mb-8">
-            O açaí é uma fruta rica em antioxidantes, fibras e gorduras boas,
-            perfeito para qualquer hora do dia.
+        <div className="text-center md:text-left mt-4 relative z-10 bg-opacity-70 px-4 rounded-xl md:ml-4">
+          <p className="text-4xl text-white mb-8">
+            Uma paixão que começou há mais de 10 anos. Temos opções 100% naturais recheadas de toppings a sua escolha.
           </p>
         </div>
       </div>
@@ -145,7 +168,6 @@ function SectionThree() {
 function SectionFour() {
   return (
     <div className="relative bg-cover bg-center min-h-[50vh]" style={{ backgroundImage: "url('/img/ip/parte_04.jpeg')" }}>
-      {/* Imagem da wave posicionada ao fundo */}
       <img
         src="/img/ip/wave.png"
         alt="Wave"
@@ -181,9 +203,9 @@ function SectionFive() {
           <p className="text-5xl leading-relaxed">
             Venha experimentar <span className="text-custompurple">o Açaí mais saudável do Rio</span>, localizado no Recreio ou peça pelo delivery!
           </p>
-          <button className="mt-10 bg-customYellow text-black items-center text-center ml-40 rounded-lg py-3 px-16">
+          <a href="https://pedido.anota.ai/loja/quentinha-frut-mix?f=ms" ><button className="mt-10 bg-customYellow text-black items-center text-center ml-40 rounded-lg py-3 px-16">
             Peça Agora
-          </button>
+          </button></a>
         </div>
       </div>
     </div>

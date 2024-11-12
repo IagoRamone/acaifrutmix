@@ -14,6 +14,7 @@ const RootLayout: React.FC<LayoutProps> = ({ children }) => {
       <head>
         <title>Açaí Frut Mix</title>
         <meta name="description" content="Your app description here" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
       </head>
       <body>
         <Header />
