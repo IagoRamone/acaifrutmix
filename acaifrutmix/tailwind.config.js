@@ -13,6 +13,7 @@ module.exports = {
         customGreen: '#BAD341',
         customYellow: '#DDFA50',
         customPurple: '#BB65CD',
+        custompurple: '#5F3368',
       },
     },
   },

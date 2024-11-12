@@ -27,3 +27,8 @@ p{
 h1,h2{
   font-family: "Lemon";
 }
+
+button{
+  font-family: "Lemonada";
+  font-size: 20px;
+}

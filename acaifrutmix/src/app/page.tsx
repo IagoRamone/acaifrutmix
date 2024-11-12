@@ -34,6 +34,7 @@ export default function HomePage() {
         <SectionTwo/>
         <SectionThree/>
         <SectionFour/>
+        <SectionFive/>
       </div>
     </>
   );
@@ -111,22 +112,17 @@ function SectionTwo() {
 
 function SectionThree() {
   return (
-    <div className="relative bg-gradient-to-br from-purple-500 to-purple-700 text-white min-h-screen pt-40"> {/* Adicionando padding top */}
+    <div className="relative bg-gradient-to-br from-purple-500 to-purple-700 text-white min-h-[75vh] pt-48 pb-20">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: "url('/img/ip/parte_03.jpeg')",
-          height: "120%", // Mantém a altura aumentada da imagem
         }}
       />
-
-      <div className="flex flex-col items-center px-10 md:flex-row md:justify-between relative z-10 ml-20 mt-20 mb-[-10vh]"> {/* Ajustando margens para efeito de queda */}
-        
+      <div className="flex flex-col items-center px-10 md:flex-row md:justify-between relative z-10 ml-20 mt-20 mb-20">
         <h1 className="text-4xl font-bold md:text-4xl text-white text-center mb-6 absolute top-0 left-1/2 transform -translate-x-1/2">
           Um pouco da nossa história
         </h1>
-
-        {/* Imagem do copo de açaí */}
         <div className="relative z-10 mt-10 md:mt-0 xl:mr-40 xxl:mr-60 w-full max-w-xs md:max-w-md ml-10">
           <img
             src="/img/ip/loja.jpeg"
@@ -134,10 +130,9 @@ function SectionThree() {
             className="w-full h-auto object-contain"
           />
         </div>
-
-        <div className="text-center md:text-left mb-20 mt-20 relative z-10 bg-opacity-70 p-6 rounded-xl">
+        <div className="text-center md:text-left mt-20 relative z-10 bg-opacity-70 p-8 rounded-xl">
           <p className="text-lg text-white mb-8">
-            O açaí é uma fruta rica em antioxidantes, fibras e gorduras boas, 
+            O açaí é uma fruta rica em antioxidantes, fibras e gorduras boas,
             perfeito para qualquer hora do dia.
           </p>
         </div>
@@ -147,20 +142,50 @@ function SectionThree() {
 }
 
 
-
-
-
-
 function SectionFour() {
   return (
-    <div className=' relative bg-gradient-to-br from-purple-500 to-purple-700 text-white'>
-      <div
-        className='absolute inset-0 bg-cover bg-center'
-        style={{ backgroundImage: "url('/img/ip/parte_04.jpeg')" }}
+    <div className="relative bg-cover bg-center min-h-[50vh]" style={{ backgroundImage: "url('/img/ip/parte_04.jpeg')" }}>
+      {/* Imagem da wave posicionada ao fundo */}
+      <img
+        src="/img/ip/wave.png"
+        alt="Wave"
+        className="absolute inset-x-0 bottom-0 h-1/3 w-full object-cover"
       />
-      <div className='flex flex-col items-center px-10 md:flex-row md:justify-between'>
-        
+    </div>
+  );
+}
+
+
+function SectionFive() {
+  return (
+    <div className="bg-white py-16">
+      
+      <div className="text-center mb-8">
+        <h2 className="text-4xl font-bold mb-4 text-black">Feedback dos clientes</h2>
+        <img
+          src="/img/ip/avaliacao.png" 
+          alt="Imagem do Título"
+          className="mx-auto mb-8"
+        />
+      </div>
+
+      <div className="flex items-center justify-between px-10">
+        <div className="w-1/2 "> 
+          <img
+            src="/img/ip/loja.jpeg" 
+            alt="Loja"
+            className="w-4/5 h-auto object-cover"
+          />
+        </div>
+        <div className="w-1/2 pl-8"> 
+          <p className="text-5xl leading-relaxed">
+            Venha experimentar <span className="text-custompurple">o Açaí mais saudável do Rio</span>, localizado no Recreio ou peça pelo delivery!
+          </p>
+          <button className="mt-10 bg-customYellow text-black items-center text-center ml-40 rounded-lg py-3 px-16">
+            Peça Agora
+          </button>
+        </div>
       </div>
     </div>
-  ); 
+  );
 }
