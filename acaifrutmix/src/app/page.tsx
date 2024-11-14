@@ -203,7 +203,7 @@ function SectionFive() {
       <div className="text-center mb-8">
         <h2 className="text-4xl font-bold mb-4 text-black z-100">Feedback dos clientes</h2>
         <img
-          src="/img/ip/avaliacao.png" 
+          src="/img/ip/avaliacao.PNG" 
           alt="Imagem do Título"
           className="mx-auto mb-8"
         />
