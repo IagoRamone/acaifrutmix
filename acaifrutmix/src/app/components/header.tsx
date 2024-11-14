@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Header = () => {
   return (
@@ -9,12 +10,12 @@ const Header = () => {
             href="https://www.instagram.com/frutmixoficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
             target="_blank"
             rel="noopener noreferrer"
-            className="h-10 w-45"
           >
-            <img
+            <Image
               src="/img/header/instagram.png"
               alt="Instagram"
-              className="h-10 w-45"
+              width={180}     
+              height={180}    
             />
           </a>
 
@@ -22,12 +23,12 @@ const Header = () => {
             href="https://www.facebook.com/frutmixoficial/"
             target="_blank"
             rel="noopener noreferrer"
-            className="h-10 w-45"
           >
-            <img
+            <Image
               src="/img/header/facebook.png"
               alt="Facebook"
-              className="h-10 w-45"
+              width={180}     
+              height={180}    
             />
           </a>
         </div>
@@ -35,6 +36,5 @@ const Header = () => {
     </header>
   );
 };
-
 
 export default Header;
