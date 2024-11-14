@@ -1,6 +1,6 @@
 "use client";
-import Image from "next/image";
 import { useState, useEffect } from "react";
+import Link from 'next/link';
 
 export default function HomePage() {
   return (
@@ -51,21 +51,21 @@ function Home() {
       />
       <div className='flex flex-col items-center px-10 md:flex-row md:justify-between'>
         <div className='mb-20 relative z-10 text-lg xl:ml-20 xxl:ml-40 mt-4'>
-          <a href="/"><img 
+          <Link href="/"><img 
             src="/img/ip/logoacai.png" 
             alt="Logo" 
             className="mx-auto mb-10" 
             width={120} 
             height={120} 
-          /></a>
+          /></Link>
           <h1 className='text-4xl font-bold md:text-5xl text-center text-justify '>
             Conheça o nosso açaí 100% natural
             <br /> livre de xarope
           </h1>
 
-          <a href="https://pedido.anota.ai/loja/quentinha-frut-mix?f=ms" ><button className="mt-10 ml-8 bg-customYellow text-black items-center text-center ml-40 rounded-lg py-3 px-16 mr-8">
+          <Link href="https://pedido.anota.ai/loja/quentinha-frut-mix?f=ms" ><button className="mt-10 ml-8 bg-customYellow text-black items-center text-center ml-40 rounded-lg py-3 px-16 mr-8">
             Peça Agora
-          </button></a>
+          </button></Link>
         </div>
 
         <div className="s:w-50px relative z-10 mt-10 md:mt-0 xl:mr-40 xxl:mr-60">
@@ -221,11 +221,11 @@ function SectionFive() {
           <p className="text-3xl sm:text-5xl leading-relaxed px-6">
             Venha experimentar <span className="text-custompurple">o Açaí mais saudável do Rio</span>, localizado no Recreio ou peça pelo delivery!
           </p>
-          <a href="https://pedido.anota.ai/loja/quentinha-frut-mix?f=ms">
+          <Link href="https://pedido.anota.ai/loja/quentinha-frut-mix?f=ms">
             <button className="mt-10 bg-customYellow text-black items-center text-center sm:ml-40 rounded-lg py-3 px-16">
               Peça Agora
             </button>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
