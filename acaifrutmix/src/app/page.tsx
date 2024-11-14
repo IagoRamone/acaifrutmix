@@ -58,7 +58,7 @@ function Home() {
             width={120} 
             height={120} 
           /></Link>
-          <h1 className='text-4xl font-bold md:text-5xl text-center text-justify '>
+          <h1 className='text-[35px] font-bold md:text-5xl text-left leading-relaxed  '>
             Conheça o nosso açaí 100% natural
             <br /> livre de xarope
           </h1>
