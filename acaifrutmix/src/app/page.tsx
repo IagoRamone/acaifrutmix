@@ -218,7 +218,7 @@ function SectionFive() {
           />
         </div>
         <div className="w-full sm:w-1/2 sm:pl-8 text-center sm:text-left">
-          <p className="text-3xl sm:text-5xl leading-relaxed px-6">
+          <p className="text-3xl sm:text-5xl leading-relaxed px-6 text-black">
             Venha experimentar <span className="text-custompurple">o Açaí mais saudável do Rio</span>, localizado no Recreio ou peça pelo delivery!
           </p>
           <Link href="https://pedido.anota.ai/loja/quentinha-frut-mix?f=ms">
