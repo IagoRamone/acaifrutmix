@@ -188,7 +188,7 @@ function SectionFour() {
   return (
     <div 
       className="relative bg-cover bg-center min-h-[50vh] sm:min-h-[60vh] py-10"
-      style={{ backgroundImage: "url('/img/ip/lp.jpeg')" }}
+      style={{ backgroundImage: "url('/img/ip/lp.png')" }}
     >
     </div>
   );
