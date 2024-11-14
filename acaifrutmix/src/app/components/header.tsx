@@ -12,7 +12,7 @@ const Header = () => {
             rel="noopener noreferrer"
           >
             <Image
-              src="/img/header/instagram.png"
+              src="/instagram.png"
               alt="Instagram"
               width={180}     
               height={180}    
@@ -25,7 +25,7 @@ const Header = () => {
             rel="noopener noreferrer"
           >
             <Image
-              src="/img/header/facebook.png"
+              src="/facebook.png"
               alt="Facebook"
               width={180}     
               height={180}    
